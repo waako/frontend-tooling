@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -169,9 +169,7 @@
 
 					* Performance
 
-					* Stats
-
-					* Analysis
+					* Analysis / Stats
 
 					* Design
 
@@ -187,7 +185,7 @@
 				</section>
 				<section>
 					<section data-markdown>
-						## Build  
+						# Build  
 
 						Things you are probably already doing
 					</section>
@@ -208,14 +206,14 @@
 						### Beautify / Prettify
 					</section>
 					<section data-markdown>
-						### Unit Tests
-					</section>
-					<section data-markdown>
 						### Minification
+
 						### Uglification
 					</section>
 					<section data-markdown>
 						### Compiling everything
+
+						### Livereload
 					</section>
 					<section data-markdown>
 						### Frameworks
@@ -233,32 +231,200 @@
 						### Images
 
 						Generate sprites
-						
+						SVG fallpack images
+
 					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						# Testing / Validation
+					</section>
+					<section data-markdown>
+						## Automated Browser testing
+
+						* [Pageres](https://github.com/sindresorhus/pageres)  
+						Capture screenshots of websites in various resolutions. A good way to make sure your websites are responsive.
+
+						* [Browserify](http://www.browsersync.io/)  
+						sync browsing & actions between devices
+					</section>
+					<section data-markdown>
+						### Headless Browser engines
+
+						PhantomJS:  
+						headless WebKit scriptable with Javascript
+					</section>
+					<section data-markdown>
+						### Visual Regression testing
+
+						Generate page screenshots with diff with every code change
+					</section>
+					<section>
+						<img src="img/diff.png">
+					</section>
+					<section data-markdown>
+						### IE (*yeah I know*)
+
+						* [ie8 linter](https://github.com/israelidanny/ie8linter)
+
+						* [Modern.IE Static Code Scan](https://github.com/InternetExplorer/modern.IE-static-code-scan)  
+analyzes the HTML, CSS, and JavaScript of a site or application for common coding issues.
+					</section>
+					<section data-markdown>
+						## Code Reviews
+
+						Highlight issues in your HTML, CSS, JS…
+					</section>
+					<section data-markdown>
+						### CSS
+
+						* [CSS Test](http://csste.st/)  
+						The why and how of CSS testing
+
+						* [Revenge](https://github.com/Heydon/REVENGE.CSS)  
+						Puts pink box & comic sans around your dirty work
+
+						* [CSS Colorguard](https://github.com/SlexAxton/css-colorguard)  
+						Keep a watchful eye on your css colors.
+					</section>
+					<section data-markdown>
+						### JS 
+
+						* jsfmt
+						* fixmyjs
+						* jsinspect
+					</section>
+					<section data-markdown>
+						### Accessibility
+
+						* [a11y.css](https://github.com/ffoodd/a11y.css)  
+						Roughly evaluate a site's quality by simply including it as an external stylesheet.
+
+						* [a11y](https://github.com/addyosmani/a11y)  
+						Easy accessibility audits powered by the Chrome Accessibility Tools.
+					</section>
+					<section data-markdown>
+						### Drupal
+
+						* [Gulp DrupalCS](https://github.com/patrickocoffeyo/drupalcs)  
+						Portable Gulp tool that checks a Drupal installation for JavaScript and PHP syntax errors.
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						# Optimisation
+					</section>
+					<section data-markdown>
+						## CSS
+
+						* [CSS Comb](https://github.com/csscomb/csscomb.js)  
+						Reorganises your CSS into defined order
+
+						* [Autoprefixr](https://github.com/postcss/autoprefixer)
+
+						* [UnCSS](https://github.com/giakki/uncss)  
+						Removes unused CSS from your stylesheets
+					</section>
+					<section data-markdown>
+						## Images
+
+						* [TMI(Too Many Image)](https://github.com/addyosmani/tmi)
+
+						* [Grunt Image](https://github.com/1000ch/grunt-image)  
+						Optimize PNG, JPEG, GIF, SVG images
+					</section>
+					<section data-markdown>
+						## Markup
+
+						* [Grunt Static Inline](https://github.com/dayvson/grunt-static-inline)  
+						Replace url from static files such as img,js,css an put inline in a template.
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						# Performance
+					</section>
+					<section data-markdown>
+						## Page Speed
+
+						* [PageSpeed ngrok](https://github.com/jrcryer/grunt-pagespeed-ngrok-sample)  
+						Run mobile and desktop performance tests for your deployed site using Google PageSpeed Insights, uses grunt-pagespeed, psi and gpagespeed for local development environments.
+					</section>
+					<section data-markdown>
+						## Performance Budgets
+
+						* [Intro by Tim Kadlec](http://timkadlec.com/2013/01/setting-a-performance-budget/)
+					</section>
+					<section data-markdown>
+						## Performance Mapping
+
+						* [PerfMap](https://github.com/zeman/perfmap)  
+Front-end performance heatmap of resources loaded in the browser using the Resource [Timing API](https://camo.githubusercontent.com/cffc7939b714e2a0795732dce6db97c6ea3275a2/687474703a2f2f7a656d616e2e6769746875622e696f2f706572666d61702f6578616d706c652e6a7067)
+					</section>
+					<section data-background="img/perf-mapping.png">
+					</section>
+					<section data-markdown>
+						## Development Performance
+
+						* [DevPerf](https://github.com/gmetais/grunt-devperf)  
+						Helps front-end developers to reach a good quality and good performances
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						# Analysis / Stats
+					</section>
+					<section data-markdown>
+						## Browser Metrics
+
+						* [Phantomas](https://github.com/macbre/phantomas)  
+						PhantomJS-based web performance metrics collector and monitoring tool
+						* Page Speed Insights
+					</section>
+					<section data-markdown>
+						## Code Stats
+
+						* [CSS Stats](https://github.com/cssstats/cssstats)
+
+						* [Houndci.com](https://github.com/thoughtbot/hound): Review your Ruby, JavaScript, CoffeeScript, and SCSS code for style guide violations with a trusty hound.
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						# Design
+					</section>
+					<section data-markdown>
+						## Styleguides
+
+						* [Styleguides.io](https://github.com/maban/styleguides)
+						* [Lonely Planet's rizzo](https://github.com/lonelyplanet/rizzo)
+					</section>
+					<section data-markdown>
+						## Pattern Library
+
+					</section>
+					<section data-markdown>
+						## Visual Regression
+
+					</section>
+				</section>
+				<section data-markdown>
+				This barely scratches the surface.
+				</section>
+				<section data-markdown>
+					## People worth watching
+
+					* [Sindre Sorhus](https://github.com/sindresorhus/)
+
+					* [Addy Osmani](https://github.com/addyosmani/)
+
+					* [Chris Ruppel](https://github.com/rupl/)  
+					Great [Frontend Ops talk](https://github.com/rupl/frontend-ops)
 				</section>
 
 				<section data-markdown>
-
-				<section data-markdown>
-
-				<section data-markdown>
-
-				<section data-markdown>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+					# Thank you!
+				</section>
 
 				<section>
 					<img src="img/llap.jpg" style="height:600px;width:auto;">
