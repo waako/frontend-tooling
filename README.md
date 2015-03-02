@@ -11,3 +11,5 @@ Performance Optimisation
 Testing
 Linting
 Toolkits, Frameworks, Scaffolds
+
+**Presented at DrupalCamp London 2015**: http://2015.drupalcamplondon.co.uk/session/rocket-surgery-brain-scientists
